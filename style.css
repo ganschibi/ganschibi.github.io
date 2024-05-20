@@ -1,55 +1,157 @@
-.banner {
-    
-    background-size: cover;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    color: #fff;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0F4C75;
   
-  .lingkaran {
-    display: inline-block;
-    border-radius: 50%;
-    width: 150px;
-    margin: auto;
-    height: 150px;
-    color: #fff;
-    background-color: #dc3545;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
   }
-  
-  .lingkaran i {
-    position: relative;
-    top: 30px;
-  }
-  
-  .crop-img {
-    object-fit: cover;
-  }
-  
-  .tim img {
-    width: 250px;
-    border: 10px solid #cccccc;
-  }
-  
-  a.social {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    border-radius: 50%;
-    background-color: #333;
-    line-height: 40px;
-  }
-  
-  .client img {
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
     height: auto;
-    max-height: 50px;
   }
-  
-  .kontak {
-    background: url("https://wallpaperaccess.com/full/1867010.jpg") no-repeat
-      center center;
-    background-size: cover;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    color: #fff;
+
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 5%;
   }
+  .carousel-inner {
+    padding: 1em;
+  }
+
+  .carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  width: 10vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.judul {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.isi {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gambar {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.tim img {
+  width: 250px;
+  border: 10px solid #14be9a;
+}
+
+.nomo {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.role {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.namagame {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hargagame {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tombol {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #0291d4;
+  line-height: 40px;
+}
+
+.gambargame {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.border {
+  border-radius: 15px;
+  width: auto;
+}
+
+#game.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.game-info .carousel,
+.game-info .details {
+  flex: 1 1 45%;
+  max-width: 45%;
+}
+.game-info .details {
+  padding-left: 15px;
+}
+.game-info img {
+  width: 100%;
+  height: auto;
+}
+.namagame {
+  margin-top: 20px;
+}
+
+.atursize {
+  font-size: 2vw;
+}
+
+.aturharga {
+  font-size: 20px;
+}
